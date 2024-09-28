@@ -21,8 +21,8 @@ Before you begin, ensure you have the following installed:
 1. **Clone the repository** (or create a new directory):
 
    ```bash
-   git clone https://github.com/yourusername/youtube-summarizer.git
-   cd youtube-summarizer
+   git clone https://github.com/JuniorRaja/yt-summarizer.git
+   cd yt-summarizer
    ```
 
 2. **Create and activate a virtual environment**:
@@ -36,7 +36,8 @@ Before you begin, ensure you have the following installed:
 3. **Install the required packages**:
 
    ```bash
-   pip install Flask requests youtube-transcript-api openai python-dotenv
+   pip install Flask requests youtube-transcript-api python-dotenv openai==0.28.0
+   
    ```
 
 4. **Set up environment variables**:
@@ -52,9 +53,11 @@ Before you begin, ensure you have the following installed:
 
 5. **Add `.env` to `.gitignore`**:
 
+
    To avoid accidentally pushing your sensitive API key to a public repository, create a `.gitignore` file and add `.env` to it:
 
    ```
+   venv
    .env
    ```
 
